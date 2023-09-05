@@ -1,0 +1,55 @@
+body{
+
+}
+
+
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddddbf!important;
+    min-height: 100vh;
+}
+.mainMenu{
+    height: 45rem;
+    background-color: blue;
+    width: 19rem;
+    z-index: 2;
+    
+    border-radius: 24px 0 0 24px;
+}
+
+
+.quizCard{
+    position: relative;
+    width: 30rem;
+    z-index: 1;
+}
+.question-footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0,0,0,0.4);
+    align-items: center;
+    padding-top: 12px;
+}
+.backgroundImg{
+    position: absolute;
+    height: 95%;
+    z-index: 0;
+    display: flex;
+}
+.mainMenuImg{
+    padding-top: 56px;
+}
+.menuSektion{
+    color: red;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    flex-direction: column;
+    padding-top: 94px;
+    font-size: 32px;
+}
+
+
+
