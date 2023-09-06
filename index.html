@@ -36,22 +36,22 @@
       </div>
       <div class="card quizCard" >
         <div class="card-body">
-          <h5 class="card-title">Frage</h5>
+          <h5 class="card-title" id="questionM">Frage</h5>
 
-          <div class="card mb-2">
-            <div class="card-body">This is some text within a card body.</div>
+          <div class="card quiz-answer mb-2">                    <!--string-->
+            <div class="card-body" id="answer_1"onclick ="answer('answer_1')">This is some text within a card body.</div>
           </div>
-          <div class="card mb-2">
-            <div class="card-body">This is some text within a card body.</div>
+          <div class="card quiz-answer  mb-2">
+            <div class="card-body"id="answer_2"onclick ="answer('answer_2')">This is some text within a card body.</div>
           </div>
-          <div class="card mb-2">
-            <div class="card-body">This is some text within a card body.</div>
+          <div class="card quiz-answer  mb-2">
+            <div class="card-body"id="answer_3"onclick ="answer('answer_3')">This is some text within a card body.</div>
           </div>
-          <div class="card mb-2">
-            <div class="card-body">This is some text within a card body.</div>
+          <div class="card quiz-answer  mb-2">
+            <div class="card-body"id="answer_4"onclick ="answer('answer_4')">This is some text within a card body.</div>
           </div>
           <div class="question-footer" >
-            <span> <b>1</b> von <b>5</b> Fragen </span>
+            <span> <b>1</b> von <b id="allQuestions" ></b> Fragen </span>
             <button type="button" class="btn btn-primary">Nächste Frage</button>
         </div>
 

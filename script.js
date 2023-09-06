@@ -52,8 +52,42 @@ let questions = [
   }
 ];
 
+let currentQ = 0;
+
 
 function init() {
-    
-    
+  document.getElementById('allQuestions').innerHTML=questions.length
+  showQuestion()
+};    
+   
+
+function showQuestion() {
+  let question = questions[currentQ];
+  document.getElementById('questionM').innerHTML = question['question'];
+  document.getElementById('answer_1').innerHTML = question['answer_1'];
+  document.getElementById('answer_2').innerHTML = question['answer_2'];
+  document.getElementById('answer_3').innerHTML = question['answer_3'];
+  document.getElementById('answer_4').innerHTML = question['answer_4'];
+  
+
 }
+  function answer(selection) {
+    let question = questions[currentQ];
+   console.log('Selected answer is', selection )
+   let selectedQuestionNumber = selection.slice(-1);
+   console.log('Selected answer is', selectedQuestionNumber )
+   console.log('Selected answer is', question['right_answer']);
+   
+   let idofrightAnswer =`answer_${question['right_answer']}`;
+
+   if (selectedQuestionNumber==question['right_answer']) {
+    console.log(' JOSH' );
+    document.getElementById(selection).parentNode.classList.add('bg-success');
+   } else {
+    console.log(' NOOO' );
+    document.getElementById(selection).parentNode.classList.add('bg-danger');
+    document.getElementById(idofrightAnswer).parentNode.classList.add('bg-success');
+   }
+  }
+
+    

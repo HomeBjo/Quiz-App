@@ -42,13 +42,23 @@ body{
     padding-top: 56px;
 }
 .menuSektion{
-    color: red;
+    color: white;
     display: flex;
     align-items: center;
     gap: 1px;
     flex-direction: column;
     padding-top: 94px;
     font-size: 32px;
+}
+.quiz-answer:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.1);
+
+}
+.bg-success, .bg-danger {
+
+   
+    color: white!important;
 }
 
 
