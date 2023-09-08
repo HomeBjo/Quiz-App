@@ -60,6 +60,9 @@ body{
    
     color: white!important;
 }
+.d-none{
+    display: none;
+}
 
 
 
